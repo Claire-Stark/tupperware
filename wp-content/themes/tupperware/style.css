@@ -1,0 +1,83 @@
+/*  
+Theme Name: Tupperware
+Theme URI: http://www.klasikthemes.com/framework/
+Description: Klasik Framework is a base/starter theme for quicker WordPress theme development. Perfect to use as business, portfolio, gallery, blog, personal and any kind of websites. Theme features 6 widget area, 12 custom widget and simple Theme Option for full CMS control with easy Logo Upload, etc. Klasik Framework is Multilingual Ready (WPML), WooCommerce compatible, Retina Ready, RTL-Language Support, Translation Ready, Responsive, Flexible, Cross Browser Compatible, Search Engine Optimized (SEO), Font Awesome ready and standard compliant with HTML5 and CSS3.
+ 
+Version: 0.7.13
+Author: klasikthemes
+Author URI: http://www.klasikthemes.com/
+License: GNU General Public License
+License URI: license.txt
+Tags: one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, post-formats, theme-options, translation-ready
+*/
+
+nav {
+	background-color: #8F3985;
+}
+.footer {
+	display: flex;
+	background-color: #8F3985;
+}
+
+.nav>a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav>a:hover{
+	color: #EFD9CE;
+}
+
+.footer-nav {
+	flex: 1 0 29%;
+}
+
+.phone {
+	flex: 1 0 29%;
+	margin: auto;
+}
+
+.phone>a {
+	color: white;
+	text-decoration: none;
+}
+
+.phone>a:hover{
+	color: #EFD9CE;
+}
+
+.facebook-widget {
+	flex: 1 0 29%;
+}
+
+#navbarSupportedContent{
+	justify-content: flex-end;
+}
+
+#navbarSupportedContent>a {
+	color: white;
+}
+
+.hero-image {
+	background-image: url('images/hero-image.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text{
+	color: #EFD9CE;
+	margin: auto;
+	text-align: center;
+	background-color: #8F3985;
+	border-radius: 0.5em;
+	padding: 0.5em;
+}
+
+.catalogue{
+	padding: 1em 0;
+}
