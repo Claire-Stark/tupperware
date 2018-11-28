@@ -11,6 +11,7 @@ License URI: license.txt
 Tags: one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, post-formats, theme-options, translation-ready
 */
 
+/*All devices and mobile phone*/
 nav {
 	background-color: #8F3985;
 }
@@ -80,4 +81,92 @@ nav {
 
 .catalogue{
 	padding: 1em 0;
+}
+
+.recipes {
+	padding: 1em 0;
+}
+
+.bottom-hero-image {
+	background-image: url('images/bottom-hero.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 70vh;
+    margin-top: 2em;
+}
+
+.about {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2em;
+}
+
+.about-image {
+	flex: 1 0 90%;
+	
+}
+
+.about-info {
+	flex: 1 0 90%;
+	margin: auto;
+	padding: 2em 2em;
+}
+
+.recipe-blurb {
+	display: none;
+}
+
+.recipe-single {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+.single-recipe-blurb {
+	padding-top: 1em;
+}
+/*for small tablet - inclusive*/
+@media only screen and (min-width : 40em) {
+
+	.about-image {
+		flex: 1 0 49%;
+		padding-left: 2em;
+	}
+
+	.about-info {
+		flex: 1 0 49%;
+		margin: auto;
+		padding: 0 2em;
+	}
+
+	.recipe-single {
+		display: flex;
+
+	}
+
+	.recipe-blurb {
+		display: block;
+		margin: auto;
+	}
+	.recipe-image {
+		max-height: 20%;
+		max-width: 20%;
+	}
+	.single-recipe-blurb{
+		margin: auto;
+	}
+
+	.blockquote {
+		margin-top: 1em;
+	}
+}
+
+/*for tablet - inclusive*/
+@media only screen and (min-width : 60em) {
+}
+ 
+ 
+/*for desktop - inclusive*/
+@media only screen and (min-width : 80em) {
 }
