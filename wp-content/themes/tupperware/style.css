@@ -12,6 +12,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, c
 */
 
 /*All devices and mobile phone*/
+
 nav {
 	background-color: #8F3985;
 }
@@ -59,6 +60,10 @@ nav {
 	color: white;
 }
 
+.hero {
+	margin: 0 !important;
+}
+
 .hero-image {
 	background-image: url('images/hero-image.png');
 	background-repeat: no-repeat;
@@ -81,12 +86,32 @@ nav {
 
 .catalogue{
 	padding: 1em 0;
+	border-bottom: thick #8F3985 solid;
+}
+
+.section-heading {
+	margin: 0.25em 0;
+}
+
+.section-subheading {
+	margin: 0.25em 0;
+}
+
+.home-recipes {
+	padding-top: 2em;
+}
+
+section {
+	margin: 1em;
 }
 
 .recipes {
 	padding: 1em 0;
 }
 
+.bottom-hero {
+	margin: 0 !important;
+}
 .bottom-hero-image {
 	background-image: url('images/bottom-hero.png');
 	background-repeat: no-repeat;
@@ -123,8 +148,16 @@ nav {
 	margin-bottom: 0.25em;
 }
 
+.recipe-image {
+	text-align: center;
+}
+
+.mobile-only{
+	margin-top: 0.25em !important;
+}
 .single-recipe-blurb {
 	padding-top: 1em;
+	text-align: center;
 }
 /*for small tablet - inclusive*/
 @media only screen and (min-width : 40em) {
@@ -140,21 +173,29 @@ nav {
 		padding: 0 2em;
 	}
 
-	.recipe-single {
+	.recipe-single-brief {
 		display: flex;
 
+	}
+	.mobile-only {
+		display: none !important;
 	}
 
 	.recipe-blurb {
 		display: block;
 		margin: auto;
+		flex: 0 0 70%;
 	}
 	.recipe-image {
-		max-height: 20%;
-		max-width: 20%;
+		flex: 0 0 20%;
+
 	}
+
 	.single-recipe-blurb{
 		margin: auto;
+		padding-top: 5em;
+		text-align: left;
+
 	}
 
 	.blockquote {
